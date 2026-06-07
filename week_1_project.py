@@ -39,7 +39,7 @@ while True: # an outer loop opened so that the program can be repeated for anoth
         print(f"Your 2nd Test score: {score_2}")
         print(f"Your 3rd Test score: {score_3}")
         print("_" * 30)
-        print(f"Your average is: {float(average)}")
+        print(f"Your average is: {float(average):.2f}")
         print("_" * 30)
         print("REMARK: PASS")
     elif average < 50:
@@ -50,13 +50,13 @@ while True: # an outer loop opened so that the program can be repeated for anoth
         print(f"Your 2nd Test score: {score_2}")
         print(f"Your 3rd Test score: {score_3}")
         print("_" * 30)
-        print(f"Your average is: {float(average)}")
+        print(f"Your average is: {float(average):.2f}")
         print("_" * 30)
         print("REMARK: FAIL")
         
     
-    answer = input("Are you another student? Yes/No: ")
-    if answer.lower() != "Yes":
+    answer = input("Are you another student? yes/no: ")
+    if answer.lower() != "yes":
         break
     
 print("Thank You!")
