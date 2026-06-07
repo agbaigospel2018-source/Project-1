@@ -5,7 +5,7 @@ while True: # an outer loop opened so that the program can be repeated for anoth
     while True: #loop opened for the first test score
         try: #to assign  the float input to the test score
             score_1 = float(input("Enter your 1st score: "))
-            if 0 <= score_1 <= 100: #breaks try loop if the input is valid; if input is valid, try loop continues
+            if 0 <= score_1 <= 100: #breaks try loop if the input is valid; if input is valid, try loop continuesc
                 break
             print("Score out of range; must be between 0 and 100. ")
         except ValueError: #When the value entered is not a number
@@ -21,6 +21,7 @@ while True: # an outer loop opened so that the program can be repeated for anoth
             print("Please enter a valid number: ")
 
     while True:
+        
         try:
             score_3 = float(input("Enter your 3rd score: "))
             if 0 <= score_3 <= 100:
