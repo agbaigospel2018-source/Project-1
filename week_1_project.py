@@ -21,7 +21,6 @@ while True: # an outer loop opened so that the program can be repeated for anoth
             print("Please enter a valid number: ")
 
     while True:
-        
         try:
             score_3 = float(input("Enter your 3rd score: "))
             if 0 <= score_3 <= 100:
