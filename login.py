@@ -15,10 +15,16 @@ while True:
     else:
         print("Access denied. Enter a correct username: ")
         
-while True:
+count = 0
+
+while count < 4:    
     digit = int(stdiomask.getpass("Enter your 4-digit password: "))
     if digit == password:
         print("Access granted.")
         break
     else: 
         print("Incorrect password. Enter a correct password")
+        count +=1
+if count == 4:
+    print("Too many failed attempts.")
+            
